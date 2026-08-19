@@ -1,0 +1,50 @@
+/* floral white: f9f6ef
+glaucous blue #7282e0
+graphite #2a2b2a
+golden sun #f2c94c
+exuberant orange #eb5a2a
+jungle teal #4b8e83
+font outfit bold and nunito */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+/* ////////////BREAK/////////////// */
+
+.outfit-bold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <700>;
+  font-style: bold;
+}
+/* ////////////BREAK/////////////// */
+html {
+  height: 100vh;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #E2D3Bf;
+  display: flex;
+  justify-content: center;
+}
+body > h1::after {
+    content: "✨";
+}
+body > h1:hover::before {
+    /* background-color: linear-gradient(to bottom skyblue violet); */
+  background-color: yellow;
+  content: "This is a :hover pseudo-class";
+  position: absolute;
+  top: 95px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+
+
+/* /////////////////IMGs////////////////////// */
+.smartGoalsBanner{
+    width: 100;
+    height:100;
+}
