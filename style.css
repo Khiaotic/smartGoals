@@ -8,7 +8,7 @@ font outfit bold and nunito */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
 /* ////////////FONT BREAK/////////////// */
@@ -16,10 +16,10 @@ font outfit bold and nunito */
 .outfit-bold {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <700>;
+  font-weight: 700;
   font-style: bold;
 }
-
+s
 
 .nunito-reg {
   font-family: "Nunito", sans-serif;
@@ -54,11 +54,18 @@ body > h1:hover::before {
   font-size: 16px;
 }
 
-h1{
+h1 , h2{
     text-align:center;
     font-size: 70px;
 }
 
+
+p , li{
+  font-family: 'nunito';
+  font-size: 24px;
+}
+
+/* /////////////////CLASSES///////////////////// */
 .title {
   position: relative;
     top: 25px;
@@ -69,19 +76,56 @@ h1{
     justify-content: center;
 }
 
-.info {
+.about {
    font-size: 18px;
     padding: 50px 50px 50px 50px;
+    background-color: #f9f6ef;
+    margin-top: 50px;
+}
+.section {
+   font-size: 18px;
+    padding: 50px 50px 50px 50px;
+    margin-top: 0px;
 }
 
-.infoContainer {
+/* .infoContainer {
     display:flex;
     flex-direction: column;
-}
+} */
 
 .center {
     text-align: center;
 }
+
+/* ////////////////////IDs/////////////////////// */
+#ex-orange{
+  color: #eb5a2a;
+  /* font-style: bold; */
+}
+#grey{
+  color: #d7d9d7;
+  /* font-style: bold; */
+}
+#gl-blue{
+  color: #7282e0;
+  /* font-style: bold; */
+}
+#jun-teal{
+  color: #4b8e83;
+  /* font-style: bold; */
+}
+
+#sun{
+  /* color: #f2c94c; */
+  color: #EEB91B;
+  /* font-style: bold; */
+}
+#graphite{
+  /* color: #f2c94c; */
+  color: #2a2b2a;
+  /* font-style: bold; */
+}
+
 /* /////////////////IMGs////////////////////// */
 .smartGoalsBanner{
     width: 70%;
