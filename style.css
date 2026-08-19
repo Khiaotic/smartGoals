@@ -8,8 +8,10 @@ font outfit bold and nunito */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
 
-/* ////////////BREAK/////////////// */
+
+/* ////////////FONT BREAK/////////////// */
 
 .outfit-bold {
   font-family: "Outfit", sans-serif;
@@ -17,16 +19,27 @@ font outfit bold and nunito */
   font-weight: <700>;
   font-style: bold;
 }
-/* ////////////BREAK/////////////// */
-html {
-  height: 100vh;
+
+
+.nunito-reg {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
+/* ////////////BREAK/////////////// */
+/* html {
+  height: 100vh;
+} */
 body {
   margin: 0;
   min-height: 100vh;
   background-color: #E2D3Bf;
-  display: flex;
-  justify-content: center;
+  /* position: absolute; */
+ 
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
 }
 body > h1::after {
     content: "✨";
@@ -41,10 +54,36 @@ body > h1:hover::before {
   font-size: 16px;
 }
 
+h1{
+    text-align:center;
+    font-size: 70px;
+}
 
+.title {
+  position: relative;
+    top: 25px;
+}
 
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+   font-size: 18px;
+    padding: 50px 50px 50px 50px;
+}
+
+.infoContainer {
+    display:flex;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+}
 /* /////////////////IMGs////////////////////// */
 .smartGoalsBanner{
-    width: 100;
-    height:100;
+    width: 70%;
+    height:70%;
 }
