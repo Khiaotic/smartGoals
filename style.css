@@ -110,6 +110,11 @@ textarea{
 height: auto;
 }
 
+/* .smartGoalsBanner{
+    width: 70%;
+    height:70%;
+} */
+
 .about {
    font-size: 18px;
     padding: 50px 50px 50px 50px;
@@ -135,6 +140,46 @@ height: auto;
 .radioInput{
   display: flex;
   flex-direction: column;
+}
+
+
+
+.cardItems{
+max-width: 400px;
+padding-left: 25px;
+}
+.card{
+background: #f9f6ef;
+border-radius: 15px;
+}
+
+.select{
+  width: 750px !important;
+  height: 40px;
+  field-sizing: large;
+  color:#eb5a2a;
+  font-size: 25px;
+}
+.elements{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px 0 0 25px;
+}
+
+/* .elements > p {
+  font-size: 8px;
+} */
+
+.elementName{
+  /* padding-top: 5px; */
+  padding-right: 2px;
+}
+
+.individualElement
+{
+  display: flex;
+  flex-direction: row;
 }
 
 button {
@@ -206,12 +251,24 @@ justify-content: center;
   /* font-style: bold; */
 }
 
+#cardCategory {
+  padding-top: 25px;
+}
+
 /* #questionNumber, #questionText {
   text-align: center;
 } */
 
-/* /////////////////IMGs////////////////////// */
-.smartGoalsBanner{
-    width: 70%;
-    height:70%;
+/* /////////////////Card IDs////////////////////// */
+#specific , #measurement, #achieve, #relative, #timeBound {
+  font-size: medium;
+  padding-top: 9px;
+}
+
+#O , #C , #E , #A , #N {
+  padding-right: 10px;
+}
+
+#symbolContainer{
+  margin-left: 25px !important;
 }
