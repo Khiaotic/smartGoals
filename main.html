@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./clientQuestions.js"></script>
+    <!-- <script src="./clientQuestions.js"></script> -->
 </head>
 <body>
     <!-- <div class="title"> -->
-        <h1 class='outfit-bold title'>
-            ✨<b>SMART</b> Goal Generator
+        <h1 class='outfit-bold'>
+            SMART Goal Generator
         </h1>
 
     <!-- </div> -->
-    <div class="banner">
-        <img class="smartGoalsBanner" src="assets/smartBanner.png" alt="Smart Goals">
+    <div class="imgContainer">
+            <img class="smartGoalsBanner" src="assets/smartBanner.png" alt="Smart Goals">
     </div>
     <section class="about">
         <!-- <div class="infoContainer">  -->
@@ -95,14 +95,14 @@
                         <label for="specific">What is your goal?</label>
                         <textarea id="s" name="specificInput" cols=50 placeholder="Be specific" required></textarea>
                         <label for="measure">How will you measure progress?</label>
-                        <textarea  id="s" name="measureInput" cols=50 placeholder="Quantity, milestones, or records" required></textarea>
+                        <textarea  id="m" name="measureInput" cols=50 placeholder="Quantity, milestones, or records" required></textarea>
                         <label for="achieve">How will you achieve this goal?</label>
-                        <textarea  id="s" name="achieveInput" cols=50 placeholder="Define the action-responsibility" required></textarea>
+                        <textarea  id="a" name="achieveInput" cols=50 placeholder="Define the action-responsibility" required></textarea>
                         <label for="relevant">Why does this goal matter?</label>
-                        <textarea  id="s" name="relevantInput" cols=50 placeholder="Why does it matter" required></textarea>
+                        <textarea  id="r" name="relevantInput" cols=50 placeholder="Why does it matter" required></textarea>
                         <label for="time">What is the deadline?</label>
-                        <textarea  id="s" name="timeInput" cols=50 placeholder="Day, week, month, year, or time" required></textarea>
-                        <button type="submit">Create SMART Goal</button>
+                        <textarea  id="t" name="timeInput" cols=50 placeholder="Day, week, month, year, or time" required></textarea>
+                        <button class="button_top" type="submit">Create SMART Goal</button>
                     </form>
                     <form id="oceanForm">
                         <div id="questionContainer">
@@ -114,25 +114,30 @@
 
                             <div class="radioInput">
                                 <label>
-                                    <input type="radio" name="answer" value="1">Strongly Disagree
-                                    
+                                    <input type="radio" name="answer" value="1">
+                                    Strongly Disagree
                                 </label>
                                 <label>
-                                    <input type="radio" name="answer" value=" 2">Strongly Disagree
+                                    <input type="radio" name="answer" value="2">
+                                    Strongly Disagree
                                 </label>
                                 <label>
-                                    <input type="radio" name="answer" value="3">Neutral
+                                    <input type="radio" name="answer" value="3">
+                                    Neutral
                                 </label>
                                 <label>
-                                    <input type="radio" name="answer" value="4">Strongly Disagree
+                                    <input type="radio" name="answer" value="4">
+                                    Strongly Disagree
                                 </label>
                                 <label>
-                                    <input type="radio" name="answer" value="5">Strongly Disagree
+                                    <input type="radio" name="answer" value="5">
+                                    Strongly Disagree
                                 </label>
                             </div>
-                            <button>Next</button>
+                            <button class="button_top">Submit</button>
                         </div> 
                     </form>
+                    <script src="./clientQuestions.js"></script>
                 </div>
 
             </div>

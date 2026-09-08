@@ -49,7 +49,7 @@ const questions= [
     },
       {
         id: 13,
-        text: "has the tools and skills needed"
+        text: "tends to have the tools and skills needed"
     },
  
       {
@@ -72,9 +72,10 @@ function showQuestion() {
     questionText.textContent = questions[currentQuestion].text;
     questionNumber.textContent = `Question ${currentQuestion +1} of ${questions.length}`;
 }
+showQuestion();
 
 ///////////////When NEXT is CLicked///////////////////////
-from.addEventListener("submit", function(event) {
+form.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
@@ -97,6 +98,8 @@ from.addEventListener("submit", function(event) {
         console.log("Assessment Completed")
     }
 });
+
+// showQuestion(); W
 
 // console.log ({
 //     question: questions[currentQuestion],

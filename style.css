@@ -11,7 +11,7 @@ font outfit bold and nunito */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
-/* ////////////FONT BREAK/////////////// */
+/* ////////////////////FONT BREAK///////////////////// */
 
 .outfit-bold {
   font-family: "Outfit", sans-serif;
@@ -19,7 +19,7 @@ font outfit bold and nunito */
   font-weight: 700;
   font-style: bold;
 }
-s
+
 
 .nunito-reg {
   font-family: "Nunito", sans-serif;
@@ -27,40 +27,43 @@ s
   font-weight: 700;
   font-style: normal;
 }
-/* ////////////BREAK/////////////// */
+/* ///////////////////////BREAK//////////////////// */
 /* html {
   height: 100vh;
 } */
 body {
-  margin: 0;
+  margin: 0px;
   min-height: 100vh;
   background-color: #E2D3Bf;
-  /* position: absolute; */
+  /* position: absolute;
  
-  /* display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center; */
 }
-body > h1::after {
+/* body > h1::after {
     content: "✨";
-}
-body > h1:hover::before {
-    /* background-color: linear-gradient(to bottom skyblue violet); */
+} */
+/* body > h1:hover::before {
+    background-color: linear-gradient(to bottom skyblue violet);
   background-color: yellow;
   content: "This is a :hover pseudo-class";
   position: absolute;
   top: 95px;
   padding: 2px;
   font-size: 16px;
-}
+} */
+
+
 
 h1 , h2{
     text-align:center;
     font-size: 70px;
 }
+
 h3{
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   font-family: 'outfit';
 }
 
@@ -89,15 +92,22 @@ textarea{
   border-radius: 8px;
   padding: 10px;
 }
-/* /////////////////CLASSES///////////////////// */
-.title {
-  position: relative;
-    top: 25px;
-}
 
-.banner {
+
+/* /////////////////CLASSES///////////////////// */
+ 
+
+.imgContainer {
     display: flex;
     justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.smartGoalsBanner {
+  width: 100%;
+  max-width: 600px;
+height: auto;
 }
 
 .about {
@@ -105,6 +115,7 @@ textarea{
     padding: 50px 50px 50px 50px;
     background-color: #f9f6ef;
     margin-top: 50px;
+    /* width: 100%; */
 }
 .section {
    font-size: 18px;
@@ -123,7 +134,43 @@ textarea{
 
 .radioInput{
   display: flex;
-  flex-direction: rowe;
+  flex-direction: column;
+}
+
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  margin-top: 20px;
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
 }
 /* .formContainer{
 display: flex;
@@ -158,6 +205,10 @@ justify-content: center;
   color: #2a2b2a;
   /* font-style: bold; */
 }
+
+/* #questionNumber, #questionText {
+  text-align: center;
+} */
 
 /* /////////////////IMGs////////////////////// */
 .smartGoalsBanner{
