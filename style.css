@@ -31,6 +31,11 @@ font outfit bold and nunito */
 /* html {
   height: 100vh;
 } */
+@media(max-width:575px){
+  body{
+    flex-wrap: wrap;
+  }
+}
 body {
   margin: 0px;
   min-height: 100vh;
@@ -142,16 +147,36 @@ height: auto;
   flex-direction: column;
 }
 
-
+.cardContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .cardItems{
-max-width: 400px;
-padding-left: 25px;
+/* max-width: 400px; */
+padding: 25px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content:center;
+align-items: stretch;
+gap: 20px;
+/* flex-wrap: wrap; */
 }
+
 .card{
 background: #f9f6ef;
 border-radius: 15px;
+display: flex;
+flex-direction: column;
+width: 400px;
+height:600px;
+box-sizing:border-box;
+flex: 0 0 400px;
 }
+
+
 
 .select{
   width: 750px !important;
@@ -164,22 +189,26 @@ border-radius: 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 25px 0 0 25px;
+  padding: 25px;
+  overflow: hidden;
+  flex: 1;
 }
 
-/* .elements > p {
-  font-size: 8px;
-} */
 
 .elementName{
-  /* padding-top: 5px; */
-  padding-right: 2px;
+  flex: 0 0 auto;
 }
 
 .individualElement
 {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+individualElement p {
+  overflow-block: break-word;
 }
 
 button {
@@ -255,15 +284,46 @@ justify-content: center;
   padding-top: 25px;
 }
 
+
+.ex-orange{
+  color: #eb5a2a;
+  /* font-style: bold; */
+}
+.grey{
+  color: #d7d9d7;
+  /* font-style: bold; */
+}
+.gl-blue{
+  color: #7282e0;
+  /* font-style: bold; */
+}
+.jun-teal{
+  color: #4b8e83;
+  /* font-style: bold; */
+}
+
+.sun{
+  /* color: #f2c94c; */
+  color: #EEB91B;
+  /* font-style: bold; */
+}
+.graphite{
+  /* color: #f2c94c; */
+  color: #2a2b2a;
+  /* font-style: bold; */
+}
+
+
 /* #questionNumber, #questionText {
   text-align: center;
 } */
 
-/* /////////////////Card IDs////////////////////// */
+/* /////////////////Card////////////////////// */
 #specific , #measurement, #achieve, #relative, #timeBound {
   font-size: medium;
   padding-top: 9px;
 }
+
 
 #O , #C , #E , #A , #N {
   padding-right: 10px;

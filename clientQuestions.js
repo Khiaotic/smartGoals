@@ -62,9 +62,9 @@ const answers = {};
 
 let currentQuestion = 0;
 
-const form = document.querySelector("#oceanForm");
 const questionText = document.querySelector("#questionText");
 const questionNumber = document.querySelector("#questionNumber");
+const oceanForm = document.querySelector("#oceanForm");
 
 
 ///////////////Populate the Questions///////////////////////
@@ -75,7 +75,7 @@ function showQuestion() {
 showQuestion();
 
 ///////////////When NEXT is CLicked///////////////////////
-form.addEventListener("submit", function(event) {
+oceanForm.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
