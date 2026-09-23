@@ -76,9 +76,9 @@ showQuestion();
 
 ///////////////When NEXT is CLicked///////////////////////
 oceanForm.addEventListener("submit", function(event) {
-
+    console.log("Why you refreshing bum???")
     event.preventDefault();
-
+    
     const selectedAnswer = document.querySelector(
         'input[name="answer"]:checked'
     );
@@ -86,35 +86,73 @@ oceanForm.addEventListener("submit", function(event) {
         alert("Please answer statement");
         return;
     }
-
+    
     answers[questions[currentQuestion].id] = Number(selectedAnswer.value);
     console.log(answers)
     currentQuestion ++;
-
+    
     if (currentQuestion < questions.length) {
         showQuestion ()
     }
     else {
         console.log("Assessment Completed")
+        const scores = calculationsOceanScores(answers);
+        console.log(scores)
+        localStorage.setItem('oceanScores', JSON.stringify(scores));
     }
+    
+    ///////////////CALCULATIONS//////////////////
+    // const openness = calculateOpenness(answers);
+    // function calculateOpenness(answers){
+    //     return answers[5] + answers[14] - answers[10]
+    // }
+    // console.log(openness);
+    
+    // const consciousness = calculateConsciousness(answers);
+    // function calculateConsciousness(answers){
+    //     return answers[3] + answers[8] - answers[13]
+    // }
+    // console.log(consciousness);
+    
+    // const extravert = calculateExtravert(answers);
+    // function calculateExtravert(answers){
+    //     return answers[6] + answers[11] - answers[1]
+    // }
+    // console.log(extravert);
+    
+    // const agreeableness = calculateAgreeableness(answers);
+    // function calculateAgreeableness(answers){
+    //     return answers[2] + answers[12] - answers[7]
+    // }
+    // console.log(agreeableness);
+    
+    // const neuroticism = calculateNeuroticism(answers);
+    // function calculateNeuroticism(answers){
+    //     return answers[4] + answers[9] - answers[13]
+    // }
+    // console.log(neuroticism);
+    
 });
 
-// showQuestion(); W
+export function calculationsOceanScores(answers){
+ const openness = answers[5] + answers[14] - answers[10];
+ const consciousness =  answers[3] + answers[8] - answers[13];
+ const extravert = answers[6] + answers[11] - answers[1];
+ const agreeableness = answers[2] + answers[12] - answers[7];
+ const neuroticism =  answers[4] + answers[9] - answers[13];   
+return {
+    openness, consciousness, extravert, agreeableness, neuroticism
+}
+}
 
-// console.log ({
-//     question: questions[currentQuestion],
-//     answer: selectedAnswer.value
-// });
+
+
+
 
 
 
 
 ///////////////Calculating Scores//////////////////////
-// const oScore = 
-// answers[5]+
-// answers[14]-
-// answers[7];
+////o=question5 + 14 -10, c=3-8 (or 3=8) - 13, e= 6+11-1
+///a=2+12-7, n=4+9-13
 
-// function populateOCEAN (){
-
-// }

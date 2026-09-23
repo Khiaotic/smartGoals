@@ -134,7 +134,7 @@
                 <form id="oceanForm">
                     <div id="questionContainer">
                         
-                        <h3>Indicate whether you agree or disagree with the following statements.</h3>
+                        <h3>Indicate whether you agree or disagree with the following statements. <b style="color: #eb5a2a">[Answer Once]</b></h3>
                         <h4 id="questionNumber"> Question 1 of 15</h4>
                         
                         <p id="questionText"></p>
@@ -146,7 +146,7 @@
                             </label>
                             <label>
                                 <input type="radio" name="answer" value="2">
-                                Strongly Disagree
+                                Disagree
                             </label>
                             <label>
                                 <input type="radio" name="answer" value="3">
@@ -154,24 +154,24 @@
                             </label>
                             <label>
                                 <input type="radio" name="answer" value="4">
-                                Strongly Disagree
+                                Agree
                             </label>
                             <label>
                                 <input type="radio" name="answer" value="5">
-                                Strongly Disagree
+                                Strongly Agree
                             </label>
                         </div>
                         <button class="button_top">Submit</button>
                     </div>
                 </form>
-                <script src="./clientQuestions.js"></script>
+                <script type="module" src="./clientQuestions.js"></script>
             </div>
             
         </div>
     </section>
-    <section>
+   
         <div class="cardsContainer">
-            <h2 class="outfit-bold">Your Card(s)</h2>
+            <h2  id= "yourCards" class="outfit-bold">Your Card(s)</h2>
             <div class="cardItems">
                 <template id="cardTemplate">
                     <div class="card">
@@ -222,14 +222,32 @@
                                     <div id="symbolContainer">
                                         <span id="symbol" style='font-size:50px;'>&#9677</span>
                                     </div>
-                                    
                                 </div>
+                                <button id="delete" class="button_delete">Delete</button>
                             </div>
                         </div>
                     </template>
                 </div>
             </div>
-        </section>
+            <div class="printBtn">
+                <button onclick="window.print()" class="button_print" id="print">Print</button>
+
+            </div>
+            
+            <script >
+                const printBtn = document.getElementById('print');
+                printBtn.addEventListener('click', e =>{
+                    print()
+                })
+                // function printDiv (card){
+                //     var printContents = document.getElementsByClassName('.card').innerHTML;
+                //     w = window.open();
+                //     w.document.write(printContents);
+                //     w.print();
+                //     w.close();
+                //     }
+                </script>
+            </section>
         
         
         
