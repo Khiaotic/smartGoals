@@ -21,7 +21,7 @@ const questions= [
     },
      {
         id: 6,
-        text: "is rewarded on the completion of this goal"
+        text: "is rewarded on the completion of goal(s)"
     },
       {
         id: 7,
